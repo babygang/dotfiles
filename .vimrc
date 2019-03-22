@@ -4,7 +4,7 @@ if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
@@ -15,6 +15,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'fatih/vim-go'
 
 "NeoBundle 'alpaca-tc/alpaca_tags'
 "NeoBundle 'AndrewRadev/switch.vim'
@@ -24,6 +25,18 @@ NeoBundle "cohama/vim-smartinput-endwise"
 NeoBundle "taglist.vim"
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'mattn/emmet-vim'
+
+" colors
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'vim-scripts/twilight'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'jpo/vim-railscasts-theme'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'vim-scripts/Wombat'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'vim-scripts/rdark'
+NeoBundle 'posva/vim-vue'
 call neobundle#end()
 
 
@@ -61,17 +74,6 @@ map <S-w> <C-w>w
 set tabstop=2
 set shiftwidth=2
 set expandtab
-
-" colors
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'vim-scripts/twilight'
-NeoBundle 'jonathanfilip/vim-lucius'
-NeoBundle 'jpo/vim-railscasts-theme'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'vim-scripts/Wombat'
-NeoBundle 'tomasr/molokai'
-NeoBundle 'vim-scripts/rdark'
 
 colorscheme torte
 syntax enable
