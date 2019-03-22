@@ -1,9 +1,9 @@
-#!/bin/sh
-unlink ~/.vimrc
-ln -s `pwd`/.vimrc ~/
+#!/bin/bash
+function mksymln() {
+  unlink ~/$1 2>/dev/null
+  ln -s `pwd`/$1 ~/
+}
 
-unlink ~/.bashrc
-ln -s `pwd`/.bashrc ~/
-
-unlink ~/.bash_profile
-ln -s `pwd`/.bash_profile ~/
+mksymln .vimrc
+mksymln .bashrc
+mksymln .bash_profile
