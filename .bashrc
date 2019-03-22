@@ -103,3 +103,17 @@ alias snake_to_camel="sed -r 's/_(.)/\U\1\E/g'"
 function m3u8_to_mp4() {
 ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i "$1" -movflags faststart -c copy "$2"
 }
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+# export COCOS_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10
+COCOS_ROOT=~/work/cocos/cocos2d-x-3.13.1
+COCOS_CONSOLE_ROOT=$COCOS_ROOT/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+COCOS_X_ROOT=/Applications/Cocos/Cocos2d-x
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+COCOS_TEMPLATES_ROOT=$COCOS_ROOT/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
