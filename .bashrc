@@ -14,7 +14,7 @@ eval "$(plenv init -)"
 # for pyenv
 export PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
-  export PATH=${PYENV_ROOT}/bin:$PATH
+  PATH=${PYENV_ROOT}/bin:$PATH
   eval "$(pyenv init -)"
 fi
 
@@ -22,18 +22,18 @@ fi
 if which goenv > /dev/null; then
   eval "$(goenv init -)";
   export GOROOT=`go env GOROOT`
-  export PATH="$GOROOT/bin:$PATH"
+  PATH="$GOROOT/bin:$PATH"
 fi
 
 # direnv
 eval "$(direnv hook bash)"
 
 # jenv
-export PATH="$HOME/.jenv/bin:$PATH"
+PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # brew
-export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
+PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 
 # alias
 alias ls='ls -CFG'
@@ -77,12 +77,12 @@ export CCACHE_COMPILERCHECK=content
 
 # android
 export NDK_ROOT=/usr/local/opt/android-ndk-r10e
-export PATH=$NDK_ROOT:$PATH
+PATH=$NDK_ROOT:$PATH
 
 export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools/22.0.1
+PATH=$PATH:$ANDROID_SDK_ROOT/tools
+PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+PATH=$PATH:$ANDROID_SDK_ROOT/build-tools/22.0.1
 
 # ccache
 export USE_CCACHE=1
@@ -117,3 +117,6 @@ export PATH=$COCOS_X_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 COCOS_TEMPLATES_ROOT=$COCOS_ROOT/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# uniq path
+export PATH=$(echo $(sed 's/:/\n/g' <<< $PATH | sort | uniq) | sed -e 's/\s/':'/g')
