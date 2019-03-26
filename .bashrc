@@ -119,4 +119,4 @@ COCOS_TEMPLATES_ROOT=$COCOS_ROOT/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 # uniq path
-export PATH=$(echo $(sed 's/:/\n/g' <<< $PATH | sort | uniq) | sed -e 's/\s/':'/g')
+export PATH=`ruby -e "puts %x{echo $PATH }.strip.split(':').uniq.join(':')"`
