@@ -6,31 +6,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-# for rbenv
-eval "$(rbenv init -)"
-
-eval "$(plenv init -)"
-
-# for pyenv
-export PYENV_ROOT="${HOME}/.pyenv"
-if [ -d "${PYENV_ROOT}" ]; then
-  PATH=${PYENV_ROOT}/bin:$PATH
-  eval "$(pyenv init -)"
-fi
-
-# goenv
-if which goenv > /dev/null; then
-  eval "$(goenv init -)";
-  export GOROOT=`go env GOROOT`
-  PATH="$GOROOT/bin:$PATH"
-fi
-
-# direnv
-eval "$(direnv hook bash)"
-
-# jenv
-PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# for anyenv
+eval "$(anyenv init -)"
 
 # brew
 PATH="/usr/local/sbin:/usr/local/bin:$PATH"
