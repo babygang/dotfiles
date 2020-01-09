@@ -7,3 +7,4 @@ function mksymln() {
 mksymln .vimrc
 mksymln .bashrc
 mksymln .bash_profile
+mksymln .gitconfig

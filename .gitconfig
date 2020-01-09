@@ -1,0 +1,17 @@
+[core]
+	editor = vim
+	excludesfile = /Users/user/.gitignore_global
+	attributesfile = ~/.gitattributes
+	pager = less -x4
+	whitespace = cr-at-eol
+[user]
+	name = baby_gang
+	email = 1176948+babygang@users.noreply.github.com
+[rebase]
+	autosquash = true
+[diff "json"]
+  textconv = "ruby -r json -e 'jj JSON(ARGF.read)'"
+[alias]
+  delete-merged-branches = !git branch --merged | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
+[diff "image"]
+	command = ~/bin/git-imgdiff
