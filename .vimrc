@@ -119,3 +119,5 @@ endfun
 " normal モードのとき ,t で QuickRun を実行（rspec の場合はテストを実行）
 nnoremap <Space>t :<C-u>QuickRun<CR>
 
+set backspace=indent,eol,start
+
