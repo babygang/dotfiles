@@ -17,7 +17,7 @@ alias ls='ls -CFG'
 alias ll='ls -AlFGh'
 alias la='ls -CFGal'
 alias mkdir='mkdir -p'
-alias reload='source ~/.bash_profile'
+alias reload='exec $SHELL -l'
 
 # git
 alias gco="git checkout"
