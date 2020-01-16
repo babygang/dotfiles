@@ -1,7 +1,7 @@
 #!/bin/bash
 function mksymln() {
   local dirpath=${2:-~}
-  unlink $dirpath/$1 2>/dev/null
+  unlink $dirpath/${1##*/} 2>/dev/null
   ln -s `pwd`/$1 $dirpath/
 }
 
@@ -15,3 +15,6 @@ mksymln git-imgdiff /usr/local/bin
 
 mkdir -p ~/.vim/syntax
 mksymln rspec-result.vim ~/.vim/syntax
+
+mkdir -p ~/.bundle
+mksymln .bundle/config ~/.bundle
