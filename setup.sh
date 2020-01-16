@@ -12,3 +12,6 @@ mksymln .gitconfig
 mksymln .gitattributes
 mksymln .gitignore_global
 mksymln git-imgdiff /usr/local/bin
+
+mkdir -p ~/.vim/syntax
+mksymln rspec-result.vim ~/.vim/syntax
