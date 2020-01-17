@@ -11,6 +11,7 @@ eval "$(anyenv init -)"
 
 # brew
 PATH="/usr/local/sbin:/usr/local/bin:$PATH"
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # alias
 alias ls='ls -CFG'
