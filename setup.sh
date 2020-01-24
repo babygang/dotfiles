@@ -16,5 +16,8 @@ mksymln git-imgdiff /usr/local/bin
 mkdir -p ~/.vim/syntax
 mksymln rspec-result.vim ~/.vim/syntax
 
+mkdir -p ~/.vim/ftplugin
+mksymln slim.vim ~/.vim/ftplugin
+
 mkdir -p ~/.bundle
 mksymln .bundle/config ~/.bundle
