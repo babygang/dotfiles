@@ -16,6 +16,8 @@ NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'slim-template/vim-slim'
+
 
 "NeoBundle 'alpaca-tc/alpaca_tags'
 "NeoBundle 'AndrewRadev/switch.vim'
