@@ -33,7 +33,7 @@ then
   fi
 
   # Run rubocop on the staged files
-  bundle exec rubocop ${FILES}
+  bundle exec rubocop --force-exclusion ${FILES}
 
   if [ $? -ne 0 ]; then
     echo "${red}[Ruby Style][Error]: Fix the issues and commit again${NC}"
