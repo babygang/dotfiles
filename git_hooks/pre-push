@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Check for rspec
+
+bundle exec rspec && bundle exec rubocop
