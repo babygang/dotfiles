@@ -2,3 +2,5 @@
 *.bak
 
 /vendor/bundle/*
+
+dump.rdb
