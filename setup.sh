@@ -8,6 +8,7 @@ function mksymln() {
 mksymln .vimrc
 mksymln .bashrc
 mksymln .bash_profile
+mksymln .zshrc
 mksymln .gitconfig
 mksymln .gitattributes
 mksymln .gitignore_global
