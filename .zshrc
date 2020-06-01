@@ -69,8 +69,8 @@ bindkey '^[^]' vi-find-prev-char
 autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
 setopt PROMPT_SUBST
-zstyle ':vcs_info:*' formats '(%s)-[%b] %m'  # hook_com[misc]を出力するため%mを追加
-zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a] %m'
+zstyle ':vcs_info:*' formats '[%b] %m'  # hook_com[misc]を出力するため%mを追加
+zstyle ':vcs_info:*' actionformats '[%b|%a] %m'
 _vcs_precmd () { vcs_info }
 add-zsh-hook precmd _vcs_precmd
 RPROMPT='%F{green}${vcs_info_msg_0_}%f'
