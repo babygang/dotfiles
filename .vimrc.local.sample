@@ -1,0 +1,3 @@
+autocmd BufEnter *.php setlocal noexpandtab
+autocmd BufEnter *.ctp setlocal noexpandtab
+
