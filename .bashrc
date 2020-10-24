@@ -98,3 +98,7 @@ export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 # uniq path
 export PATH=`ruby -e "puts %x{ echo $PATH }.strip.split(':').uniq.join(':')"`
+
+# PIPENV_VENV_IN_PROJECT
+export PIPENV_VENV_IN_PROJECT=true
+
