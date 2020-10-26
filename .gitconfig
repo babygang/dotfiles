@@ -4,6 +4,7 @@
 	attributesfile = ~/.gitattributes
 	pager = less -x4
 	whitespace = cr-at-eol
+	quotepath = false
 [user]
 	name = baby_gang
 	email = 1176948+babygang@users.noreply.github.com
