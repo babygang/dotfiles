@@ -1,0 +1,2 @@
+#!/bin/bash
+ruby $(dirname `readlink $0`)/tools/split_vid.rb $1 $2
