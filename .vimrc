@@ -39,6 +39,8 @@ NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'vim-scripts/rdark'
 NeoBundle 'posva/vim-vue'
+NeoBundle 'digitaltoad/vim-pug'
+NeoBundle 'dNitro/vim-pug-complete'
 call neobundle#end()
 
 
