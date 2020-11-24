@@ -13,6 +13,7 @@ mksymln .gitconfig
 mksymln .gitattributes
 mksymln .gitignore_global
 mksymln git-imgdiff /usr/local/bin
+mksymln split_vid /usr/local/bin
 
 mkdir -p ~/.vim/tmp
 mkdir -p ~/.vim/syntax
