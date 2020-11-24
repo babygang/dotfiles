@@ -47,6 +47,14 @@ alias bin="bundle install"
 alias gip="curl https://ifconfig.io"
 alias lip="ifconfig | grep 'inet ' | grep -v 127.0.0.1"
 
+alias dsstore_remove="find . -name '.DS_Store' -type f -ls -delete"
+
+# docker-compose
+alias dcbuild="docker-compose build"
+alias dcu="docker-compose up"
+alias dcexec="docker-compose exec"
+alias dcstop="docker-compose stop"
+
 # ccache
 export USE_CCACHE=1
 export NDK_CCACHE=ccache
