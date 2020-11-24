@@ -87,7 +87,7 @@ alias camel_to_snake="sed -r 's/([A-Z])/_\L\1/g' | sed 's/^_//'"
 alias snake_to_camel="sed -r 's/_(.)/\U\1\E/g'"
 
 function m3u8_to_mp4() {
-ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i "$1" -movflags faststart -c copy "$2"
+  ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i "$1" -movflags faststart -c copy "$2"
 }
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
