@@ -90,6 +90,9 @@ set directory=~/.vim/tmp
 let g:syntastic_eruby_ruby_quiet_messages =
     \ {"regex": "possibly useless use of a variable in void context"}
 
+" for vim-vue
+autocmd FileType vue syntax sync fromstart
+
 "===========================================
 "" quickrun settings
 "===========================================
