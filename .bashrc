@@ -14,6 +14,11 @@ PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 alias sed='gsed'
 alias grep='ggrep'
 
+# for krb5
+export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
+PATH="$PATH:/usr/local/opt/krb5/bin"
+PATH="$PATH:/usr/local/opt/krb5/sbin"
+
 # alias
 alias ls='ls -CFG'
 alias ll='ls -AlFGh'
