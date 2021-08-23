@@ -83,6 +83,7 @@ colorscheme torte
 syntax enable
 
 highlight SpecialKey term=underline ctermfg=red guifg=red
+highlight Comment ctermfg=lightyellow
 set list
 set listchars=tab:^\ ,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set directory=~/.vim/tmp
