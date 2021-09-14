@@ -3,7 +3,7 @@
 class SplitVidTool
   def initialize(vid_name, split_sec)
     @vid_name = vid_name
-    @split_sec = split_sec.to_i
+    @split_sec = (split_sec || 3600).to_i
 
     @extname = File.extname(@vid_name)
     @basename = File.basename(@vid_name).gsub(/#{@extname}$/, '')
